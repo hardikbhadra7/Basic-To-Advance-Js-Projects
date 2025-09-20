@@ -19,4 +19,5 @@ This project helps in managing daily tasks efficiently by allowing users to **ad
 - **CSS** – Styling and layout.
 - **JavaScript** – Functionality (DOM manipulation & event handling).
 
+
 ---
