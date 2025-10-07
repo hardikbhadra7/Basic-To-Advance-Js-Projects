@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js" defer></script>
+    <!-- Import google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body>
+    <main class="weather-container">
+        <!-- search input part  -->
+        <header class="input-container">
+            <input type="text" class="search-input" placeholder="Search city">
+            <button class="search-btn">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </button>
+        </header>
+        <!-- weather info part location and date  -->
+        <section class="weather-info" style="display: none;">
+            <div class="location-date-container">
+                <div class="location">
+                    <span class="material-symbols-outlined">location_on</span>
+                    <h4 class="place-name">Gujarat</h4>
+                    <h4 class="country-name">India</h4>
+                </div>
+                <h5 class="current-date regular-txt">Fri, 05 Sep</h5>
+            </div>
+            <!-- weather condition container part  -->
+            <div class="weather-condition-container">
+                <img src="assets-weathers/cloudy-day.png" alt="Image Not Load" class="weather-condition">
+                <div class="weather-temperature">
+                    <h1 class="temperature-value">29 °C</h1>
+                    <h3 class="condition-name regular-txt">Partly cloudy</h3>
+                </div>
+            </div>
+            <!-- weather details like humidity wind speed part  -->
+            <div class="weather-details">
+                <div class="detail-item">
+                    <span class="material-symbols-outlined">
+                        water_drop
+                    </span>
+                    <div class="weather-details-item">
+                        <h5 class="regular-txt">Humidity</h5>
+                        <h5 class="humidity-value">55%</h5>
+                    </div>
+                </div>
+
+                <div class="detail-item">
+                    <span class="material-symbols-outlined">
+                        air
+                    </span>
+                    <div class="weather-details-item">
+                        <h5 class="regular-txt">Wind Speed</h5>
+                        <h5 class="wind-value">2 km/h</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- forecast-items-container part  -->
+
+            <div class="forecast-items-container">
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">07 Aug</h5>
+                    <img class="forecast-item-img" src="assets-weathers/thunderstorm-icon.jpg" alt="Thunderstorm icon">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">07 Aug</h5>
+                    <img class="forecast-item-img" src="assets-weathers/thunderstorm-icon.jpg" alt="Thunderstorm icon">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">07 Aug</h5>
+                    <img class="forecast-item-img" src="assets-weathers/thunderstorm-icon.jpg" alt="Thunderstorm icon">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">07 Aug</h5>
+                    <img class="forecast-item-img" src="assets-weathers/thunderstorm-icon.jpg" alt="Thunderstorm icon">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+            </div>
+        </section>
+
+        <!-- section part finished  -->
+
+        <!-- New section start for search city and error showing  -->
+
+        <section class="search-city message-section">
+            <img src="search-city.png">
+            <h1>Search city</h1>
+        </section>
+
+        <section class="not-found message-section" style="display: none;">
+            <img src="not-found.png">
+            <h1>City not found</h1>
+        </section>
+    </main>
+</body>
+
+</html>
