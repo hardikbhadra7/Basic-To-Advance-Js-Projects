@@ -1,0 +1,121 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #206aeb;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tip-calculator {
+    width: 90%;
+    max-width: 19rem;
+    height: auto;
+    border: none;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+}
+
+input::placeholder {
+    color: black
+}
+
+.tip-amount input {
+    width: 100%;
+    margin-top: 8px;
+    padding: 5px;
+    color: black;
+    border: 2px solid #a09d9d;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+.bill-amount input {
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    padding: 5px;
+    border: 2px solid #a09d9d;
+    border-radius: 5px;
+    color: black;
+}
+
+.tip-amount {
+    font-size: 17px;
+}
+
+.bill-amount {
+    font-size: 17px;
+}
+
+#calculatebtn {
+    width: 100%;
+    margin-top: 15px;
+    font-size: 16px;
+    padding: 7px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #2575fc);
+}
+
+#calculatebtn:hover {
+    color: white;
+    background: linear-gradient(135deg, #1d9cd1);
+}
+
+#total-amount {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    background-color: #b4b3be;
+    border: none;
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    #calculatebtn {
+        font-size: 21px;
+        padding: 8px;
+        background-color: #4384f5;
+    }
+
+    input {
+        padding: 9px;
+    }
+
+    body {
+        background-color: #4384f5;
+    }
