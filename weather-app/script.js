@@ -1,5 +1,3 @@
-const apiKey = "e72a8d10ea3a42ea944134335250809";
-
 // selected all important classes and id 
 const cityName = document.getElementById("city-name");
 const weatherImg = document.getElementById("weather-img");
